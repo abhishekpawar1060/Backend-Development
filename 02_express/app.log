@@ -1,0 +1,5 @@
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/data\",\"status\":\"201\",\"responseTome\":\"7.356\"}","timestamp":"2024-09-05T14:42:48.029Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/data\",\"status\":\"201\",\"responseTome\":\"5.016\"}","timestamp":"2024-09-05T14:44:02.082Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/data\",\"status\":\"201\",\"responseTome\":\"0.741\"}","timestamp":"2024-09-05T14:44:03.606Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"A post request is made","timestamp":"2024-09-05T14:45:20.012Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/data\",\"status\":\"201\",\"responseTome\":\"14.456\"}","timestamp":"2024-09-05T14:45:20.031Z"}

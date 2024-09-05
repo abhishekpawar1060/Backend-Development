@@ -2,17 +2,39 @@
 
 import 'dotenv/config'
 import express from 'express';
+import logger from './logger.js';
+import morgan from 'morgan';
+
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
+
+const morganForamt = ':method :url :status :response-time ms';
+
+app.use(morgan(morganForamt, {
+    stream: {
+        write: (message) => {
+            const logObject = {
+                method: message.split(' ')[0],
+                url: message.split(' ')[1],
+                status: message.split(' ')[2],
+                responseTome: message.split(' ')[3],
+            };
+            logger.info(JSON.stringify(logObject));
+        }
+    }
+}));
+
+
 let data = [];
 let nextId = 1;
 
 //add new data
-app.post('/data', (req, res) => {
+app.post('/data', (req, res) => {  
+    logger.info("A post request is made")  
     const { name, price } = req.body
     const newData = { id: nextId++, name, price}
     data.push(newData);
