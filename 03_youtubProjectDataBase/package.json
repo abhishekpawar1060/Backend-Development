@@ -1,0 +1,27 @@
+{
+  "name": "03_youtubprojectdatabase",
+  "version": "1.0.0",
+  "description": "a project of youtube",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongoose"
+  ],
+  "author": "abhishek pawar",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.6.1"
+  }
+}
